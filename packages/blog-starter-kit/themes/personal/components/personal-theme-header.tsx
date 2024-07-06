@@ -3,7 +3,6 @@ import { resizeImage } from '@starter-kit/utils/image';
 import Link from 'next/link';
 import { PublicationNavbarItem } from '../generated/graphql';
 import { useAppContext } from './contexts/appContext';
-import { ToggleTheme } from './toggle-theme';
 import { Button } from './button';
 import NewsletterPlusSVG from './icons/svgs/NewsletterPlusSVG';
 import Image from 'next/image';
@@ -82,17 +81,17 @@ export const PersonalHeader = () => {
 										h: 400,
 										c: 'face',
 									})}
+									width={400}
+									height={400}
 								/>
 							)}
 							megabyte
 						</Link>
 					</h1>
-					<ToggleTheme className="md:hidden" />
 				</div>
 			</div>
 			<div className="col-span-full flex flex-row items-center justify-between gap-4 md:col-span-1 md:justify-end">
 				<nav>{navList}</nav>
-				<ToggleTheme className="hidden md:block" />
 				<Button
 					label=""
 					type="outline"
