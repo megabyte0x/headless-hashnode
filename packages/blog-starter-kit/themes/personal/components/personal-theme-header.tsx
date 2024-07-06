@@ -92,12 +92,12 @@ export const PersonalHeader = () => {
 			</div>
 			<div className="col-span-full flex flex-row items-center justify-between gap-4 md:col-span-1 md:justify-end">
 				<nav>{navList}</nav>
-				<Button
+				{/* <Button
 					label=""
 					type="outline"
 					className="!p-2"
 					icon={<NewsletterPlusSVG className="w-5 h-5 fill-current" />}
-				/>
+				/> */}
 			</div>
 		</header>
 	);
