@@ -81,7 +81,7 @@ const _resizeImage = (src, resize, defaultImage) => {
 exports.resizeImage = _resizeImage;
 
 exports.imageReplacer = (content, lazyLoad = false) => {
-	var regex = /<Image src="([^"]+)"/g;
+	var regex = /<img src="([^"]+)"/g;
 	var srcVals = content.match(regex);
 
 	if (!srcVals) {
@@ -98,7 +98,7 @@ exports.imageReplacer = (content, lazyLoad = false) => {
 		content = content.replace(oldSrc, map[oldSrc]);
 	});
 	if (lazyLoad) {
-		content = content.replace(/<Image/g, '<Image loading="lazy"');
+		content = content.replace(/<img/g, '<img loading="lazy"');
 	}
 	return content;
 };

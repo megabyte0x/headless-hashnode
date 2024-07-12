@@ -4,6 +4,7 @@ import { type NextRequest } from 'next/server';
 import { DEFAULT_AVATAR } from '../../../utils/const';
 import Image from 'next/image';
 
+
 export const config = {
 	runtime: 'edge',
 };
