@@ -199,7 +199,7 @@ export const loadIframeResizer = () => {
 		}
 		const script = document.createElement('script');
 
-		script.src = `/js/iframe-resizer.js`;
+		script.src = `/blogs/js/iframe-resizer.js`;
 		script.async = true;
 		script.defer = true;
 

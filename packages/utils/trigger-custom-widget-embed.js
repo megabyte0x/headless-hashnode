@@ -6,7 +6,7 @@ export const triggerCustomWidgetEmbed = async (pubId) => {
   frames.forEach(async (frame) => {
     try {
       const iframe = document.createElement('iframe');
-      const host = "https://blog.megabyte0x.xyz/blogs";
+      const host = window.location.host;
       iframe.id = `frame-${frame.id}`;
       iframe.sandbox = 'allow-same-origin allow-forms allow-presentation allow-scripts allow-popups';
       iframe.src =
