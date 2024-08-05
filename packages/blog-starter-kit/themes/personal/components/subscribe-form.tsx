@@ -45,7 +45,7 @@ export const SubscribeForm = ({ title }: { title: string }) => {
 				<>
 					<p className="text-center">
 						Read articles from {title} Blog directly inside your inbox. Subscribe to the newsletter,
-						and don't miss out.
+						and don&apos;t miss out.
 					</p>
 					<div className="relative w-full rounded-full border border-slate-200 bg-white p-2 dark:bg-neutral-950">
 						<input
